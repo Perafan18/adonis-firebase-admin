@@ -1,0 +1,29 @@
+{
+  "name": "adonis-firebase-admin",
+  "version": "1.0.0",
+  "description": "Firebase for AdonisJS ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Perafan18/adonis-firebase-cloud-messaging.git"
+  },
+  "keywords": [
+    "AdonisJs",
+    "Adonis",
+    "Firebase",
+    "FCM",
+    "NodeJS"
+  ],
+  "author": "Pedro Perafán Carrasco",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/Perafan18/adonis-firebase-cloud-messaging/issues"
+  },
+  "homepage": "https://github.com/Perafan18/adonis-firebase-cloud-messaging#readme",
+  "dependencies": {
+    "firebase": "^4.8.1",
+    "firebase-admin": "^5.7.0"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "adonis-firebase-admin",
   "version": "1.0.0",
-  "description": "Firebase for AdonisJS ",
+  "description": "Firebase for AdonisJS",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

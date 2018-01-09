@@ -18,6 +18,18 @@ const providers = [
 ];
 ```
 
+and in your `.env` file
+
+```
+FIREBASE_PROJECT_ID=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
+FIREBASE_API_KEY=
+FIREBASE_AUTH_DOMAIN=
+FIREBASE_DATABASE_URL=
+FIREBASE_STORAGE_BUCKET=
+```
+
 then you can simply call it from within controllers etc:
 
 ```javascript

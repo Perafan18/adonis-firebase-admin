@@ -1,5 +1,7 @@
 'use strict'
 
+const Env = use('Env')
+
 /*
  |--------------------------------------------------------------------------
  | Firebase
@@ -15,39 +17,35 @@ module.exports = {
    |--------------------------------------------------------------------------
    | Firebase Admin credentials key file
    |--------------------------------------------------------------------------
-
-    projectId: "<PROJECT_ID>",
-    clientEmail: "foo@<PROJECT_ID>.iam.gserviceaccount.com",
-    privateKey: "-----BEGIN PRIVATE KEY-----\n<KEY>\n-----END PRIVATE KEY-----\n"
    */
   credential: {
-    projectId: '',
-    clientEmail: '',
-    privateKey: ''
+    projectId: Env.get('FIREBASE_PROJECT_ID'),
+    clientEmail: Env.get('FIREBASE_CLIENT_EMAIL'),
+    privateKey: Env.get('FIREBASE_PRIVATE_KEY')
   },
   /*
    |--------------------------------------------------------------------------
    | API key
    |--------------------------------------------------------------------------
    */
-  apiKey: '',
+  apiKey: Env.get('FIREBASE_API_KEY'),
   /*
    |--------------------------------------------------------------------------
    | Auth
    |--------------------------------------------------------------------------
    */
-  authDomain: '',
+  authDomain: Env.get('FIREBASE_AUTH_DOMAIN'),
   /*
    |--------------------------------------------------------------------------
    | Database
    |--------------------------------------------------------------------------
    */
-  databaseURL: '',
+  databaseURL: Env.get('FIREBASE_DATABASE_URL'),
   /*
    |--------------------------------------------------------------------------
    | Hosting
    |--------------------------------------------------------------------------
    */
-  storageBucket: ''
+  storageBucket: Env.get('FIREBASE_STORAGE_BUCKET')
 
 };

@@ -48,4 +48,4 @@ module.exports = {
    */
   storageBucket: Env.get('FIREBASE_STORAGE_BUCKET')
 
-};
+}

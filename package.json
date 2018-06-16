@@ -33,7 +33,9 @@
     "firebase-admin": "^5.12.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.1",
     "dotenv": "^5.0.1",
+    "faker": "^4.1.0",
     "japa": "^1.0.6",
     "japa-cli": "^1.0.1",
     "nyc": "^11.8.0",

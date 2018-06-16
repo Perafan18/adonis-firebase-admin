@@ -9,4 +9,4 @@ class FirebaseAdmin {
   }
 }
 
-module.exports = { FirebaseAdmin }
+module.exports = FirebaseAdmin

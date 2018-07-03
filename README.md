@@ -3,10 +3,7 @@
 Firebase client and admin providers for AdonisJS
 
 [![npm version](https://badge.fury.io/js/adonis-firebase-admin.svg)](https://badge.fury.io/js/adonis-firebase-admin)
-
 [![Build status](https://ci.appveyor.com/api/projects/status/j5bj7h3uhqf5eu2s/branch/master?svg=true)](https://ci.appveyor.com/project/Perafan18/adonis-firebase-admin/branch/master)
-
-
 [![GitHub license](https://img.shields.io/github/license/Perafan18/adonis-firebase-admin.svg)](https://github.com/Perafan18/adonis-firebase-admin/blob/master/LICENSE)
 
 

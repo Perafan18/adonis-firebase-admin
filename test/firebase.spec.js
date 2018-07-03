@@ -6,7 +6,7 @@ const faker = require('faker')
 const Firebase = require('../src/Firebase')
 
 test.group('Firebase', () => {
-  test.skip('send push notification', async (assert) => {
+  test('register and store username', async (assert) => {
     const config = {
       apiKey: process.env.FIREBASE_API_KEY,
       authDomain: process.env.FIREBASE_AUTH_DOMAIN,

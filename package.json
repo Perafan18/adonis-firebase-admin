@@ -1,6 +1,6 @@
 {
   "name": "adonis-firebase-admin",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Firebase for AdonisJS",
   "scripts": {
     "lint": "standard",

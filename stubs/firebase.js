@@ -19,9 +19,16 @@ module.exports = {
    |--------------------------------------------------------------------------
    */
   credential: {
-    projectId: Env.get('FIREBASE_PROJECT_ID'),
-    clientEmail: Env.get('FIREBASE_CLIENT_EMAIL'),
-    privateKey: Env.get('FIREBASE_PRIVATE_KEY')
+    type: Env.get('FIREBASE_CREDENTIAL_TYPE'),
+    project_id: Env.get('FIREBASE_CREDENTIAL_PROJECT_ID'),
+    private_key_id: Env.get('FIREBASE_CREDENTIAL_PRIVATE_KEY_ID'),
+    private_key: Env.get('FIREBASE_CREDENTIAL_PRIVATE_KEY'),
+    client_email: Env.get('FIREBASE_CREDENTIAL_CLIENT_EMAIL'),
+    client_id: Env.get('FIREBASE_CREDENTIAL_CLIENT_ID'),
+    auth_uri: Env.get('FIREBASE_CREDENTIAL_AUTH_URI'),
+    token_uri: Env.get('FIREBASE_CREDENTIAL_TOKEN_URI'),
+    auth_provider_x509_cert_url: Env.get('FIREBASE_CREDENTIAL_AUTH_PROVIDER'),
+    client_x509_cert_url: Env.get('FIREBASE_CREDENTIAL_CLIENT')
   },
   /*
    |--------------------------------------------------------------------------

@@ -3,7 +3,7 @@
 const firebase = require('firebase')
 
 class Firebase {
-  initialize (config) {
+  constructor (config) {
     return firebase.initializeApp(config)
   }
 }

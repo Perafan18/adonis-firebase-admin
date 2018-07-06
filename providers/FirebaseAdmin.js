@@ -1,6 +1,6 @@
 'use strict'
 
-const { ServiceProvider, Ioc } = require('@adonisjs/fold')
+const { ServiceProvider } = require('@adonisjs/fold')
 const FirebaseAdmin = require('../src/FirebaseAdmin')
 
 class FirebaseProvider extends ServiceProvider {
@@ -18,12 +18,12 @@ class FirebaseProvider extends ServiceProvider {
         credential: Config.get('firebase.credential'),
         databaseURL: Config.get('firebase.databaseURL')
       }
-      return FirebaseAdmin.initialize(config)
+      return new FirebaseAdmin(config)
     })
   }
 
   * boot () {
-    Ioc.alias('FirebaseAdmin', 'Perafan/FirebaseAdmin')
+    this.app.alias('Perafan/FirebaseAdmin', 'FirebaseAdmin')
   }
 }
 

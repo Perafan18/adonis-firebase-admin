@@ -13,7 +13,7 @@ test.group('Firebase', () => {
       databaseURL: process.env.FIREBASE_DATABASE_URL,
       storageBucket: process.env.FIREBASE_STORAGE_BUCKET
     }
-    const firebase = new Firebase().initialize(config)
+    const firebase = await new Firebase(config)
     const email = faker.internet.email()
     const password = faker.internet.password()
     const username = faker.internet.userName()
@@ -23,9 +23,9 @@ test.group('Firebase', () => {
     const uid = user.uid
     await firebase.database().ref('users/' + uid).set({
       username: username
-    });
+    })
 
-    const usernameFirebase = await firebase.database().ref('users/' + uid).once('value').then(function(snapshot) {
+    const usernameFirebase = await firebase.database().ref('users/' + uid).once('value').then(function (snapshot) {
       return snapshot.val().username
     })
 

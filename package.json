@@ -29,17 +29,17 @@
   },
   "homepage": "https://github.com/Perafan18/adonis-firebase-cloud-messaging#readme",
   "dependencies": {
-    "firebase": "^4.13.1",
-    "firebase-admin": "^5.12.0"
+    "firebase": "^5.5.6",
+    "firebase-admin": "^5.13.1"
   },
   "devDependencies": {
-    "coveralls": "^3.0.1",
+    "coveralls": "^3.0.2",
     "dotenv": "^5.0.1",
     "faker": "^4.1.0",
     "japa": "^1.0.6",
     "japa-cli": "^1.0.1",
-    "nyc": "^11.7.1",
-    "semver": "^5.5.0",
+    "nyc": "^11.9.0",
+    "semver": "^5.6.0",
     "standard": "^11.0.1"
   },
   "nyc": {

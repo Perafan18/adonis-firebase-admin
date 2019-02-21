@@ -45,6 +45,6 @@ FIREBASE_STORAGE_BUCKET=
 then you can simply call it from within controllers etc:
 
 ```javascript
-const Firebase = use('Firebase')
-const FirebaseAdmin = use('FirebaseAdmin')
+const Firebase = use('Perafan/Firebase');
+const FirebaseAdmin = use('Perafan/FirebaseAdmin');
 `````
